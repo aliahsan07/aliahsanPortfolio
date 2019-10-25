@@ -22,19 +22,15 @@ const config = {
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
   menuLinks: [
     {
-      name: 'Me',
-      link: '/me/',
+      name: "Blog",
+      link: "/blog/"
     },
     {
-      name: 'Articles',
-      link: '/blog/',
-    },
-    {
-      name: 'Contact',
-      link: '/contact/',
-    },
+      name: "Contact",
+      link: "/contact/"
+    }
   ],
-    // Links to social profiles/projects you want to display in the author segment/navigation bar.
+  // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
       label: "GitHub",
@@ -53,8 +49,8 @@ const config = {
     }
   ],
   copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
-  themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+  themeColor: "#C7A27C", // Used for setting manifest and progress theme colors.
+  backgroundColor: "#EE9480" // Used for setting manifest background color.
 };
 
 // Validate

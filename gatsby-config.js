@@ -18,6 +18,7 @@ module.exports = {
     }
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     {
@@ -43,9 +44,6 @@ module.exports = {
             options: {
               maxWidth: 690
             }
-          },
-          {
-            resolve: "gatsby-remark-responsive-iframe"
           },
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers",
