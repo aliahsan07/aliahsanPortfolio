@@ -23,11 +23,11 @@ const config = {
   menuLinks: [
     {
       name: "Blog",
-      link: "/blog/"
+      link: "/inprogress/"
     },
     {
       name: "Contact",
-      link: "/contact/"
+      link: "/inprogress/"
     }
   ],
   // Links to social profiles/projects you want to display in the author segment/navigation bar.

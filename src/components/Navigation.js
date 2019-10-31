@@ -48,6 +48,7 @@ export default class Navigation extends Component {
                 {link.name}
               </Link>
             ))}
+            {/* 
             <div className="cta">
               <button
                 className="dark-switcher"
@@ -62,6 +63,7 @@ export default class Navigation extends Component {
                 )}
               </button>
             </div>
+                */}
           </div>
         </div>
       </nav>
