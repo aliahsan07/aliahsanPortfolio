@@ -127,6 +127,8 @@ module.exports = {
                 date: edge.node.fields.date,
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
+                template: edge.node.fields.template,
+                repo: edge.node.fields.repo,
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
                 custom_elements: [
@@ -156,6 +158,8 @@ module.exports = {
                       date
                       category
                       tags
+                      template
+                      repo
                     }
                   }
                 }

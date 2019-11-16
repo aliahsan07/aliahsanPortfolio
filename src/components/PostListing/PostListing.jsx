@@ -20,6 +20,7 @@ class PostListing extends React.Component {
 
   render() {
     const postList = this.getPostList();
+    console.log(postList);
     return (
       <div>
         {/* Your post list here. */
@@ -27,8 +28,7 @@ class PostListing extends React.Component {
           <Link to={post.path} key={post.title}>
             <h1>{post.title}</h1>
           </Link>
-        ))
-}
+        ))}
       </div>
     );
   }

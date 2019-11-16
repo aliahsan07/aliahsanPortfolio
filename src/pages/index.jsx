@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import GitHubButton from "react-github-btn";
 import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
+import Portfolio from "../components/Portfolio/Portfolio";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import ali from "../images/ali.jpg";
@@ -12,7 +13,7 @@ class Index extends React.Component {
   render() {
     const { data } = this.props;
     const postEdges = this.props.data.allMarkdownRemark.edges;
-
+    console.log("Data", data);
     return (
       <Layout>
         <div className="index-container">
@@ -62,7 +63,8 @@ class Index extends React.Component {
         <div className="container">
           <section className="section">
             <h2>Projects</h2>
-            <PostListing simple postEdges={postEdges} />
+            <Portfolio projects={postEdges} />
+            {/** <PostListing simple postEdges={postEdges} /> */}
           </section>
         </div>
       </Layout>
@@ -92,6 +94,10 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            repo
+          }
+          internal {
+            content
           }
         }
       }
