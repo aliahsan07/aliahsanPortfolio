@@ -25,9 +25,14 @@ class Index extends React.Component {
                 <div>
                   <h1>{`Hi, I'm Ali`}</h1>
                   <p>
-                    {`I'm a Computer Science Masters Student at University of Texas at Dallas. I write code
-                    in JavaScript and Python primarily. This is my portfolio and blogging site where I intend to 
-                    write about software engineering, distributed systems and program analysis.  
+                    {`I'm a Computer Science Masters Student at University of Texas at Dallas. I am currently taking courses 
+                    in Distributed Computing, Machine Learning and Databases. I also research on the static analysis tools in JavaScript.
+                    
+                    `}
+                  </p>
+                  <p>
+                    {`I originate from Pakistan where I did my undergrad in CS from Lahore University of Management Sciences.
+                    I worked at VentureDive, Lahore for 13 months before coming to United States for pursuing Masters.
                     `}
                   </p>
                 </div>
@@ -95,6 +100,7 @@ export const pageQuery = graphql`
             cover
             date
             repo
+            timestamp
           }
           internal {
             content

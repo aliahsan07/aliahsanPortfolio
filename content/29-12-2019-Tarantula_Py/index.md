@@ -1,10 +1,11 @@
 ---
 title: "TarantulaPy"
-cover: "https://unsplash.it/400/300/?random?BigTest"
+cover: "../../src/static/yaktocat.png"
 template: project
 date: "29/10/2019"
 slug: "tarantulaPy"
 category: "null"
+timestamp: "Fall 2017"
 repo: "https://github.com/aliahsan07/tarantulaPy"
 tags:
   - Python

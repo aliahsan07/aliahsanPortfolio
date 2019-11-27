@@ -1,10 +1,11 @@
 ---
 title: "PyFix"
-cover: "https://unsplash.it/400/300/?random?BigTest"
+cover: "../../src/static/yaktocat.png"
 template: project
 date: "29/10/2019"
 slug: "automated-program-repair"
 category: "null"
+timestamp: "Spring 2018"
 repo: "https://github.com/ZainQasmi/Automated-Program-Repair"
 tags:
   - Python

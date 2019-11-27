@@ -601,6 +601,32 @@ h2.publication-company {
   }
 }
 
+.semester-container {
+  span {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    background: $light;
+    border-radius: $border-radius;
+    color: lighten($font-color, 10%);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0 0.5rem 0.5rem 0;
+
+    .count {
+      color: $secondary-color;
+      font-weight: 700;
+      margin-left: 0.25rem;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: darken($light, 5%);
+      color: $font-color;
+    }
+  }
+}
+
 @include small-breakpoint {
   .tag-container {
     span {

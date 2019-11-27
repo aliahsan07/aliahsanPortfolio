@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import kebabCase from "lodash.kebabcase";
+import Img from "gatsby-image";
 
 class Portfolio extends React.Component {
   render() {
@@ -8,7 +9,8 @@ class Portfolio extends React.Component {
     return (
       <section>
         {projects.map(project => {
-          const { title, tags, repo } = project.node.frontmatter;
+          const { title, tags, repo, timestamp } = project.node.frontmatter;
+          let featuredImgFluid = project.node.frontmatter.cover;
           return (
             <div style={{ display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", flexDirection: "row" }}>
@@ -24,6 +26,7 @@ class Portfolio extends React.Component {
                 ) : (
                   <h2>{title}</h2>
                 )}
+                <div className="semester-container">{timestamp}</div>
                 <div className="tag-container">
                   {tags &&
                     tags.map(tag => (
@@ -37,6 +40,7 @@ class Portfolio extends React.Component {
                     ))}
                 </div>
               </div>
+              <Img fluid={featuredImgFluid} />
               <p>{project.node.internal.content}</p>
             </div>
           );
