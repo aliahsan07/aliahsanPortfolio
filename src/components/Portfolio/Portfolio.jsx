@@ -13,7 +13,9 @@ class Portfolio extends React.Component {
           let featuredImgFluid = project.node.frontmatter.cover;
           return (
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ display: "flex", flexDirection: "row" }}>
+              <div
+                style={{ display: "flex", flexDirection: "row", height: "2em" }}
+              >
                 {!!repo ? (
                   <a
                     key={title}
