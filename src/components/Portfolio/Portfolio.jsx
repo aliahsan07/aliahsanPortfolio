@@ -21,27 +21,28 @@ class Portfolio extends React.Component {
                     style={{ textDecoration: "none" }}
                     href={repo}
                   >
-                    <h2>{title}</h2>
+                    <h3>{title}</h3>
                   </a>
                 ) : (
-                  <h2>{title}</h2>
+                  <h3>{title}</h3>
                 )}
                 <div className="semester-container">{timestamp}</div>
-                <div className="tag-container">
-                  {tags &&
-                    tags.map(tag => (
-                      <Link
-                        key={tag}
-                        style={{ textDecoration: "none" }}
-                        to={`/tags/${kebabCase(tag)}/`}
-                      >
-                        <span>{tag}</span>
-                      </Link>
-                    ))}
-                </div>
               </div>
               <Img fluid={featuredImgFluid} />
               <p>{project.node.internal.content}</p>
+              <div className="tag-container">
+                {tags &&
+                  tags.map(tag => (
+                    <Link
+                      key={tag}
+                      style={{ textDecoration: "none" }}
+                      to={`/tags/${kebabCase(tag)}/`}
+                    >
+                      <span>{tag}</span>
+                    </Link>
+                  ))}
+              </div>
+              <hr className="project-hrs" />
             </div>
           );
         })}

@@ -14,7 +14,7 @@ html {
 body {
   color: $font-color;
   font-size: 1rem;
-  background: #e8ebf7;
+  background: #e8e8e8;
 }
 
 @include small-breakpoint {
@@ -33,7 +33,6 @@ table {
 }
 
 @include small-breakpoint {
-  p,
   ol,
   ul,
   dl,
@@ -93,7 +92,8 @@ h1 {
 h2 {
   font-size: $h2-mobile;
   font-weight: 700;
-  border-bottom: 2px solid lighten($border-color, 77%);
+  border-bottom: 1px solid #6d6d6d;
+  // border-bottom: 2px solid lighten($border-color, 77%);
   padding-bottom: 0.5rem;
 }
 
