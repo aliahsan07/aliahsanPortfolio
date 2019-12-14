@@ -4,8 +4,12 @@ This website was bootstrapped with [Gatsby Advanced Starter](https://github.com/
 
 ## Note
 This is the first milestone of my personal website. A minimal portfolio website is up, and the next step is to start blogging which will be available at aliahsan.tech/blog
-Contacts page will also be made live soon. 
-Thinking of this as MVP-1. 
+
+
+Contact page will also be made live soon. 
+
+
+
 
 ## Features
 - Projects in markdown files
