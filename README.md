@@ -12,5 +12,5 @@ Thinking of this as MVP-1.
 - Sass 
 - GraphQL
 
-The website is deployed on Netlify and is available on aliahsan.tech.
+The website is deployed on Netlify and is available on [aliahsan.tech](https://www.aliahsan.tech)
 
