@@ -1193,6 +1193,29 @@ button[disabled] {
   // color: #111;
 }
 
+.inprogress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+
+  h1 {
+    align-self: center;
+    font-size: 4em;
+    color: $primary-color;
+  }
+}
+
+@include small-breakpoint {
+  .inprogress {
+    flex-direction: row;
+  }
+  img {
+    align-self: center;
+  }
+}
+
 .separator {
   margin-left: 7px;
   margin-right: 7px;
