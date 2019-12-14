@@ -68,7 +68,7 @@
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       max-width: inherit;
     }
 
@@ -982,17 +982,19 @@ blockquote {
 }
 
 .footer {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
   align-items: center;
   color: $light-font-color;
+  align-items: flex-start;
 
   div {
     display: flex;
     align-items: center;
-    padding-bottom: 1.5rem;
+    // padding-bottom: 1.5rem;
+    // align-items: flex-start;
   }
 
   strong {
@@ -1002,7 +1004,7 @@ blockquote {
   a {
     font-weight: 400;
     color: darken(#acbed8, 30%);
-    display: block;
+    // display: block;
     text-decoration: underline;
     font-size: 1.5rem;
     // margin-right: 0.3rem;
@@ -1021,7 +1023,7 @@ blockquote {
 
 @include small-breakpoint {
   .footer {
-    flex-direction: row;
+    flex-direction: column;
     height: 100px;
   }
 }
@@ -1115,8 +1117,8 @@ button[disabled] {
 .personal-picture {
   margin-top: 2.5rem;
   border-radius: 8px;
-  // width: 200px;
-  height: 200px;
+  align-self: center;
+  height: 300px;
   margin-right: 1.5rem;
 }
 
@@ -1163,8 +1165,8 @@ button[disabled] {
 }
 
 ::selection {
-  background: rgba(255, 235, 20, 0.7);
-  color: #111;
+  background: rgba(255, 255, 255, 0.7);
+  // color: #111;
 }
 
 .separator {

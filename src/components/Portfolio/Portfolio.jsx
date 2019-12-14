@@ -35,13 +35,7 @@ class Portfolio extends React.Component {
               <div className="tag-container">
                 {tags &&
                   tags.map(tag => (
-                    <Link
-                      key={tag}
-                      style={{ textDecoration: "none" }}
-                      to={`/tags/${kebabCase(tag)}/`}
-                    >
-                      <span>{tag}</span>
-                    </Link>
+                    <span style={{ textDecoration: "none" }}>{tag}</span>
                   ))}
               </div>
               <hr className="project-hrs" />

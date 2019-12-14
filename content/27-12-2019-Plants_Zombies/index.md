@@ -2,7 +2,7 @@
 title: "Pokemon Battle in Unity"
 cover: "../../src/static/yaktocat.png"
 template: project
-date: "29/10/2019"
+date: "27/12/2019"
 category: "null"
 timestamp: "Fall 2016"
 slug: "plantsvzombies"
@@ -14,4 +14,6 @@ tags:
   - PlantsvZombies
 ---
 
-I designed this game in Unity game engine using opensource Pokemon sprites to create a Plants v Zombies like combat functionality in which you can plant your favorite Pokemon to defend your gym against the incoming evil Pokemon. Vuforia API was integrated to provide augmented reality to the end-users.
+Developed a PlantsvZombies like game in Unity game engine backed by C# code. I incorporated opensource Pokemon sprites instead of the regular plants and zombies. Every Pokemon was assigned a single attack such as all water Pokemon would shoot water in a single direction. The user could plant their Pokemon (just like PlantsvZombies) to protect their base against Team Rocket's Pokemon.
+
+I also integrated Vuforia API to provide augmented reality functionality.

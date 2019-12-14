@@ -28,6 +28,27 @@ export default class Footer extends Component {
           >
             linkedin
           </a>
+          <span className="separator">{" • "}</span>
+          <a
+            href="mailto: aliahsan07@outlook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            email
+          </a>
+        </div>
+        <div style={{ flexBasis: "100%" }}>
+          <span>
+            Portfolio theme credits:
+            <a
+              href="https://www.taniarascia.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Tania Rascia
+            </a>
+          </span>
         </div>
       </footer>
     );
