@@ -41,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-direction: column;
   }
 
   p {
@@ -58,6 +59,13 @@
     flex-direction: column;
     align-items: center;
     font-size: 1.2rem;
+
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: row;
+    }
 
     .elevator {
       margin-right: 2.5rem;
@@ -120,6 +128,8 @@
 .social-buttons {
   display: flex;
   align-items: center;
+  margin-top: 1em;
+  justify-content: center;
 
   div:first-of-type {
     margin-right: 0.5rem;
@@ -1115,11 +1125,21 @@ button[disabled] {
 }
 
 .personal-picture {
-  margin-top: 2.5rem;
+  height: 200px;
+  // margin-top: 2.5rem;
   border-radius: 8px;
   align-self: center;
-  height: 300px;
   margin-right: 1.5rem;
+}
+
+@include small-breakpoint {
+  .personal-picture {
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    align-self: center;
+    height: 300px;
+    margin-right: 1.5rem;
+  }
 }
 
 .newsletter-section {
