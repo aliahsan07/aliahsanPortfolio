@@ -5,16 +5,9 @@ import noctowl from "../images/noctowl.png";
 function PageInProgress(props) {
   return (
     <Layout>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-          marginTop: "inherit"
-        }}
-      >
+      <div className="inprogress">
         <img src={noctowl} alt="Noctowl" />
-        <h1 style={{ alignSelf: "center", fontSize: "4em", color:"#605353" }}>Coming Soon</h1>
+        <h1>Coming Soon</h1>
       </div>
     </Layout>
   );
