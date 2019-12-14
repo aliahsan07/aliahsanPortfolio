@@ -14,7 +14,7 @@ function PageInProgress(props) {
         }}
       >
         <img src={noctowl} alt="Noctowl" />
-        <h1 style={{ alignSelf: "center", fontSize: "4em" }}>Coming Soon</h1>
+        <h1 style={{ alignSelf: "center", fontSize: "4em", color:"#605353" }}>Coming Soon</h1>
       </div>
     </Layout>
   );

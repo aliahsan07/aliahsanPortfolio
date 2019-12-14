@@ -22,7 +22,7 @@ class Index extends React.Component {
           <div className="container">
             <div className="lead">
               <div className="intro">
-                <div>
+                <div className="intro-text">
                   <h1>{`Hi, I'm Ali`}</h1>
                   <p>
                     {`I'm a Computer Science Masters Student at University of Texas at Dallas. I am currently taking courses 
