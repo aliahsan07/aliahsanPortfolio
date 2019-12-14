@@ -35,6 +35,7 @@
     font-weight: 700;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   .intro {
@@ -42,6 +43,7 @@
     justify-content: space-between;
     width: 100%;
     flex-direction: column;
+    text-align: center;
   }
 
   p {
@@ -60,14 +62,19 @@
     align-items: center;
     font-size: 1.2rem;
 
+    h1 {
+      text-align: left;
+    }
+
     .intro {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      text-align: left;
       flex-direction: row;
     }
 
-    .intro-text{
+    .intro-text {
       margin-right: 20px;
     }
 
@@ -616,31 +623,41 @@ h2.publication-company {
 }
 
 .semester-container {
-  margin-top: 0.9rem;
-  margin-left: 1em;
-  font-size: 0.8rem;
+  margin-left: 0.5em;
   color: #777;
-  span {
-    display: inline-block;
-    padding: 0.3rem 0.5rem;
-    background: $light;
-    border-radius: $border-radius;
-    color: lighten($font-color, 10%);
+  font-size: 0.5em;
+  margin-top: 0.6em;
+}
+
+@include small-breakpoint {
+  .semester-container {
+    // margin-top: 0.9rem;
+    margin-left: 1em;
     font-size: 0.8rem;
-    font-weight: 400;
-    margin: 0 0.5rem 0.5rem 0;
+    padding-top: 0.5em;
+    color: #777;
+    span {
+      display: inline-block;
+      padding: 0.3rem 0.5rem;
+      background: $light;
+      border-radius: $border-radius;
+      color: lighten($font-color, 10%);
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin: 0 0.5rem 0.5rem 0;
 
-    .count {
-      color: $secondary-color;
-      font-weight: 700;
-      margin-left: 0.25rem;
-    }
+      .count {
+        color: $secondary-color;
+        font-weight: 700;
+        margin-left: 0.25rem;
+      }
 
-    &:hover,
-    &:active,
-    &:focus {
-      background: darken($light, 5%);
-      color: $font-color;
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($light, 5%);
+        color: $font-color;
+      }
     }
   }
 }
