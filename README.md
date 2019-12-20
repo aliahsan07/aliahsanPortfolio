@@ -18,5 +18,5 @@ Contact page will also be made live soon.
 - Sass 
 - GraphQL
 
-The website is deployed on Netlify and is available on [aliahsan.tech](https://www.aliahsan.tech)
+The website is deployed on Netlify and is available at [aliahsan.tech](https://www.aliahsan.tech)
 
