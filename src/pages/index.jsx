@@ -13,7 +13,6 @@ class Index extends React.Component {
   render() {
     const { data } = this.props;
     const postEdges = this.props.data.allMarkdownRemark.edges;
-    console.log("Data", data);
     return (
       <Layout>
         <div className="index-container">
