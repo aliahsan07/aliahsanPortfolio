@@ -7,7 +7,6 @@ import config from "../../data/SiteConfig";
 import Layout from "../layout";
 import ali from "../images/texas.jpeg";
 import axios from "axios";
-import * as emailjs from "emailjs-com";
 
 const encode = data => {
   return Object.keys(data)
