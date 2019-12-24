@@ -11,4 +11,4 @@ tags:
   - C
 ---
 
-Simulate the cache using the LRU and FIFO replacement policy. Program outputs the number of hits and misses for a given stream of input, gives an idea of the effectivness of the replacement policies.
+Simulated the cache using the LRU and FIFO replacement policy. Program outputs the number of hits and misses for a given stream of input, gives an idea of the effectivness of the replacement policies.
