@@ -36,7 +36,7 @@ class ContactPage extends React.Component {
                 return errors;
               }}
               onSubmit={(values, { setSubmitting, resetForm }) => {
-                fetch("/", {
+                fetch("/?no-cache=1", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -68,6 +68,7 @@ class ContactPage extends React.Component {
                 <form
                   onSubmit={handleSubmit}
                   data-netlify="true"
+                  name="contact"
                   data-netlify-honeypot="bot-field"
                 >
                   <label
