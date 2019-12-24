@@ -2,7 +2,7 @@
 title: "Leader Election in Distributed Environment"
 cover: "../../src/static/yaktocat.png"
 template: project
-date: "2/1/2020"
+date: "2019/10/23"
 category: "null"
 timestamp: "Fall 2019"
 slug: "leader-election"

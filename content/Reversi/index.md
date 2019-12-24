@@ -2,7 +2,7 @@
 title: "Reversi"
 cover: "../../src/static/yaktocat.png"
 template: project
-date: "28/12/2019"
+date: "2019/10/16"
 category: "null"
 timestamp: "Spring 2017"
 slug: "reversi"

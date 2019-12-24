@@ -1,8 +1,8 @@
 ---
-title: "Classic Notes App with Electron"
+title: "Classic Notes App in Electron"
 cover: "../../src/static/yaktocat.png"
 template: project
-date: "1/1/2020"
+date: "2019/10/22"
 category: "null"
 timestamp: "Dec 2018"
 slug: "electronapp"

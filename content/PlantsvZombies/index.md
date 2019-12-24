@@ -2,7 +2,7 @@
 title: "Pokemon Battle in Unity"
 cover: "../../src/static/yaktocat.png"
 template: project
-date: "27/12/2019"
+date: "2019/10/15"
 category: "null"
 timestamp: "Fall 2016"
 slug: "plantsvzombies"

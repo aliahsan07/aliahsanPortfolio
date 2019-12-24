@@ -2,7 +2,7 @@
 title: "Stutor"
 cover: "../../src/static/yaktocat.png"
 template: project
-date: "29/12/2019"
+date: "2019/10/16"
 slug: "stutor"
 category: "null"
 timestamp: "Spring 2017"
