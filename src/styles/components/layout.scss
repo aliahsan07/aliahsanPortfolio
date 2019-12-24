@@ -1215,11 +1215,18 @@ button[disabled] {
   margin: auto;
   max-width: 800px;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .caption {
   color: rgba(0, 0, 0, 0.45);
+}
+
+@include small-breakpoint {
+  .contact {
+    flex-direction: row;
+  }
 }
 
 .inprogress {

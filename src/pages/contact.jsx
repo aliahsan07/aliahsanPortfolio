@@ -1,12 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Formik, Field, Form } from "formik";
-import { graphql } from "gatsby";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
 import Layout from "../layout";
 import ali from "../images/texas.jpeg";
-import axios from "axios";
 
 const encode = data => {
   return Object.keys(data)
@@ -22,7 +18,7 @@ class ContactPage extends React.Component {
           contact me{" "}
         </h1>
         <div className="contact">
-          <img src={ali} style={{ height: "400px" }} alt="Ali Ahsan" />
+          <img src={ali} style={{ height: "450px" }} alt="Ali Ahsan" />
           <div style={{ width: "33%" }}>
             <Formik
               initialValues={{ email: "", name: "", message: "" }}
