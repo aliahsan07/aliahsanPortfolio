@@ -1210,6 +1210,18 @@ button[disabled] {
   // color: #111;
 }
 
+.contact {
+  display: flex;
+  margin: auto;
+  max-width: 800px;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.caption {
+  color: rgba(0, 0, 0, 0.45);
+}
+
 .inprogress {
   display: flex;
   flex-direction: column;
