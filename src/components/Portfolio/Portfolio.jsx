@@ -13,9 +13,7 @@ class Portfolio extends React.Component {
           let featuredImgFluid = project.node.frontmatter.cover;
           return (
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <div
-                style={{ display: "flex", flexDirection: "row", height: "2em" }}
-              >
+              <div style={{ display: "flex", flexDirection: "row" }}>
                 {!!repo ? (
                   <a
                     key={title}
@@ -23,10 +21,10 @@ class Portfolio extends React.Component {
                     style={{ textDecoration: "none" }}
                     href={repo}
                   >
-                    <h3>{title}</h3>
+                    <h3 style={{ marginBottom: "0.2em" }}>{title}</h3>
                   </a>
                 ) : (
-                  <h3>{title}</h3>
+                  <h3 style={{ marginBottom: "0.2em" }}>{title}</h3>
                 )}
                 <div className="semester-container">{timestamp}</div>
               </div>
