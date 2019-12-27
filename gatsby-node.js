@@ -43,7 +43,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
   const postPage = path.resolve("src/templates/post.jsx");
   const tagPage = path.resolve("src/templates/tag.jsx");
@@ -73,6 +73,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   if (markdownQueryResult.errors) {
     console.error(markdownQueryResult.errors);
+    reporter.panic("error querying: ", markdownQueryResult.errors);
     throw markdownQueryResult.errors;
   }
 
