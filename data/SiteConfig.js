@@ -21,7 +21,7 @@ const config = {
   menuLinks: [
     {
       name: "Blog",
-      link: "/inprogress/"
+      link: "/blog/"
     },
     {
       name: "Contact",

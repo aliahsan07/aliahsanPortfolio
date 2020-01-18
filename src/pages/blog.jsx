@@ -1,14 +1,23 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../layout";
 // import PostListing from "../components/PostListing";
 // import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 
+import Layout from "../layout";
+import CategoryContainer from '../templates/category';
+
 export default class BlogSite extends Component {
   render() {
-    return <h1>Blog is in Progress</h1>;
+    return (
+      <Layout>
+        <div className="container">
+          <h1>Articles</h1>
+          <CategoryContainer />
+        </div>
+      </Layout>
+    );
   }
 }
 

@@ -18,17 +18,38 @@ class PostListing extends React.Component {
     return postList;
   }
 
+  renderEmpty() {
+    return <h1>Articles will be added very soon!</h1>;
+  }
+
+  renderList() {
+    return (
+      <>
+      <div className="search-container">
+        <input className="search" type="text" name="searchTerm" placeholder="Type here to filter posts..." />
+        <div className="filter-count">127</div>
+      </div>
+      postList.map(post => (
+        <Link to={post.path} key={post.title}>
+          <h1>{post.title}</h1>
+        </Link>
+      ))
+      </>
+    );
+  }
+
   render() {
     const postList = this.getPostList();
-    console.log(postList);
+
     return (
-      <div>
-        {/* Your post list here. */
-        postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
-        ))}
+      <div style={{"width": "100%"}}>
+        {
+          postList.length ? (
+            this.renderList()
+          ) : (
+            this.renderEmpty()
+          )
+        }
       </div>
     );
   }
