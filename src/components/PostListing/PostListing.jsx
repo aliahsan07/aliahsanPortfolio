@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import noctowl from "../../images/noctowl.png";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -19,15 +20,21 @@ class PostListing extends React.Component {
   }
 
   renderEmpty() {
-    return <h1>Articles will be added very soon!</h1>;
+    return (
+      <div className="inprogress">
+        <img src={noctowl} alt="Noctowl" />
+        <h3 className="coming-soon">Articles will be added very soon!</h3>
+      </div>
+    );
   }
 
   renderList() {
+    const length = postList.length;
     return (
       <>
       <div className="search-container">
         <input className="search" type="text" name="searchTerm" placeholder="Type here to filter posts..." />
-        <div className="filter-count">127</div>
+        <div className="filter-count">{length}</div>
       </div>
       postList.map(post => (
         <Link to={post.path} key={post.title}>

@@ -922,6 +922,21 @@ blockquote {
   margin-bottom: 2rem;
 }
 
+@keyframes coming-soon { 
+  0%, 20%, 50%, 80%, 85%, 90%, 95%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-70px);} 
+  60% {transform: translateY(-55px);} 
+}
+
+.coming-soon { 
+  color: #333;
+  text-align: center;
+  margin: 80px 0px !important;
+  animation-duration: 2s; 
+  animation-name: coming-soon; 
+  animation-timing-function: ease-out;
+}
+
 .category-container {
   display: flex;
   justify-content: flex-start;
@@ -1234,7 +1249,7 @@ button[disabled] {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 20px;
+  margin: 60px;
 
   h1 {
     align-self: center;
@@ -1245,7 +1260,7 @@ button[disabled] {
 
 @include small-breakpoint {
   .inprogress {
-    flex-direction: row;
+    flex-direction: column;
   }
   img {
     align-self: center;
