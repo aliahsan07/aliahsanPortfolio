@@ -36,11 +36,11 @@ class PostListing extends React.Component {
         <input className="search" type="text" name="searchTerm" placeholder="Type here to filter posts..." />
         <div className="filter-count">{length}</div>
       </div>
-      postList.map(post => (
+      {postList.map(post => (
         <Link to={post.path} key={post.title}>
           <h1>{post.title}</h1>
         </Link>
-      ))
+      ))}
       </>
     );
   }
