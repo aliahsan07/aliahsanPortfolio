@@ -28,7 +28,7 @@ class PostListing extends React.Component {
     );
   }
 
-  renderList() {
+  renderList(postList) {
     const length = postList.length;
     return (
       <>
@@ -52,7 +52,7 @@ class PostListing extends React.Component {
       <div style={{"width": "100%"}}>
         {
           postList.length ? (
-            this.renderList()
+            this.renderList(postList)
           ) : (
             this.renderEmpty()
           )
