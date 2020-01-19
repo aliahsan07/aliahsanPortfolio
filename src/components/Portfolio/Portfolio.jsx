@@ -8,11 +8,11 @@ class Portfolio extends React.Component {
     const { projects } = this.props;
     return (
       <section>
-        {projects.map(project => {
+        {projects.map((project, index) => {
           const { title, tags, repo, timestamp } = project.node.frontmatter;
           let featuredImgFluid = project.node.frontmatter.cover;
           return (
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div key={index} style={{ display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", flexDirection: "row" }}>
                 {!!repo ? (
                   <a
@@ -32,8 +32,8 @@ class Portfolio extends React.Component {
               <p>{project.node.internal.content}</p>
               <div className="tag-container">
                 {tags &&
-                  tags.map(tag => (
-                    <span style={{ textDecoration: "none" }}>{tag}</span>
+                  tags.map((tag, index) => (
+                    <span key={index} style={{ textDecoration: "none" }}>{tag}</span>
                   ))}
               </div>
               <hr className="project-hrs" />
