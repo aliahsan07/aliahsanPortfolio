@@ -24,10 +24,17 @@ class Index extends React.Component {
                 <div className="intro-text">
                   <h1>{`Hi, I'm Ali`}</h1>
                   <p>
-                    {`I'm a Computer Science Masters Student at University of Texas at Dallas. I am currently taking courses 
-                    in Distributed Computing, Machine Learning and Databases. My research interests lie in developing static analysis tools for dynamic languages such as JavaScript and Python.
-                    
-                    `}
+                    {`I'm a Computer Science Masters Student at University of
+                    Texas at Dallas. I'm working with Professor `}
+                    <a
+                      target="_blank"
+                      href="https://personal.utdallas.edu/~swei/"
+                    >
+                      Shiyi Wei{" "}
+                    </a>
+                    on evaluating the current state of JavaScript static
+                    analysis tooling and automatic localization of sources of
+                    inaccuracy.
                   </p>
                   <p>
                     {`I originate from Pakistan, where I did my undergrad in CS from Lahore University of Management Sciences.
