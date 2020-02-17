@@ -12,7 +12,7 @@ const CategoryTemplate = ({ pageContext }) => {
   const postEdges = this.props.data.allMarkdownRemark.edges;
   */
   // ! change it back later
-  const category = '';
+  const category = "";
   const postEdges = [];
   // ! add REACT-HELMET back once you have categories!!! as of now it shows null
 
@@ -24,35 +24,6 @@ const CategoryTemplate = ({ pageContext }) => {
       <PostListing postEdges={postEdges} />
     </div>
   );
-}
-
-/* eslint no-undef: "off" */
-// export const pageQuery = graphql`
-//   query CategoryPage($category: String) {
-//     allMarkdownRemark(
-//       limit: 1000
-//       sort: { fields: [fields___date], order: DESC }
-//       filter: { frontmatter: { category: { eq: $category } } }
-//     ) {
-//       totalCount
-//       edges {
-//         node {
-//           fields {
-//             slug
-//             date
-//           }
-//           excerpt
-//           timeToRead
-//           frontmatter {
-//             title
-//             tags
-//             cover
-//             date
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+};
 
 export default CategoryTemplate;

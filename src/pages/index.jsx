@@ -84,6 +84,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { template: { eq: "project" } } }
     ) {
       edges {
         node {

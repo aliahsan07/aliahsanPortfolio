@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import noctowl from "../../images/noctowl.png";
+import moment from "moment";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -32,15 +33,14 @@ class PostListing extends React.Component {
     const length = postList.length;
     return (
       <>
-      <div className="search-container">
-        <input className="search" type="text" name="searchTerm" placeholder="Type here to filter posts..." />
-        <div className="filter-count">{length}</div>
-      </div>
-      {postList.map(post => (
-        <Link to={post.path} key={post.title}>
-          <h1>{post.title}</h1>
-        </Link>
-      ))}
+        {postList.map(post => (
+          <Link to={post.path} key={post.title}>
+            <h3>{post.title}</h3>
+            <div className="excerpt">
+              {moment.utc(post.date).format("MMMM Do, YYYY")}
+            </div>
+          </Link>
+        ))}
       </>
     );
   }
@@ -49,14 +49,8 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
 
     return (
-      <div style={{"width": "100%"}}>
-        {
-          postList.length ? (
-            this.renderList(postList)
-          ) : (
-            this.renderEmpty()
-          )
-        }
+      <div style={{ width: "100%" }}>
+        {postList.length ? this.renderList(postList) : this.renderEmpty()}
       </div>
     );
   }
