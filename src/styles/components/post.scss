@@ -1,0 +1,23 @@
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-content-container {
+  margin: 0 auto;
+  width: 70vw;
+
+  & > *   {
+    > h5 {
+      font-weight: 400;
+      color: $primary-color;
+    }
+  }
+  & > * > * > * {
+    > h5 {
+      color: $primary-color;
+      font-weight: 400;
+    }
+  }
+}

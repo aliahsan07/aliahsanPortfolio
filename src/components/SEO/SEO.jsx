@@ -25,7 +25,7 @@ class SEO extends Component {
     }
 
     if (
-      !image.match(
+      image && !image.match(
         `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
       )
     )
