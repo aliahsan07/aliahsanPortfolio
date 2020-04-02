@@ -11,7 +11,6 @@ import CategoryContainer from "../templates/category";
 export default class BlogSite extends Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
-    console.log(posts[0]);
     return (
       <Layout>
         <div className="container" style={{ marginTop: "-60px" }}>

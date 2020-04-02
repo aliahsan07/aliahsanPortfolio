@@ -6,9 +6,9 @@
 
 .blog-content-container {
   margin: 0 auto;
-  width: 70vw;
+  max-width: 740px;
 
-  & > *   {
+  & > * {
     > h5 {
       font-weight: 400;
       color: $primary-color;

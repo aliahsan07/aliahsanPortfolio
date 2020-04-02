@@ -17,6 +17,8 @@ class PostListing extends React.Component {
         timeToRead: postEdge.node.timeToRead
       });
     });
+    // i wanna see my printy boy
+    console.log("uaaaaa", postList);
     return postList;
   }
 
@@ -34,6 +36,7 @@ class PostListing extends React.Component {
     return (
       <>
         {postList.map(post => (
+          // problem is here? post.path there is no route
           <Link to={post.path} key={post.title}>
             <h3>{post.title}</h3>
             <div className="excerpt">
@@ -44,7 +47,7 @@ class PostListing extends React.Component {
       </>
     );
   }
-
+  // im still looking at the code. give me a minute
   render() {
     const postList = this.getPostList();
 
