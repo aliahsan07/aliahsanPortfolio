@@ -25,7 +25,11 @@ class Index extends React.Component {
                   <h1>{`Hi, I'm Ali`}</h1>
                   <p>
                     {`I'm a Computer Science Masters Student at University of
-                    Texas at Dallas. I'm working with Professor `}
+                    Texas at Dallas. I'm interning at Walmart for Summer 2020 as a full-stack developer. 
+                    `}
+                  </p>
+                  <p>
+                    {`My research interest lies in the static analysis of dynamic languages, primarily JavaScript. I work with Professor `}
                     <a
                       target="_blank"
                       href="https://personal.utdallas.edu/~swei/"
