@@ -2,11 +2,11 @@
   margin-top: 55px;
   padding: 40px 0 0;
   min-height: calc(100vh - 162px);
+  background: #10032fc4;
 }
 
 @include small-breakpoint {
   #main-content {
-    margin-top: 92px;
     padding: 60px 0 0;
     min-height: calc(100vh - 219px);
   }
@@ -21,6 +21,7 @@
 
 @include small-breakpoint {
   .container {
+    margin-top: 30px;
     padding: 0 2rem;
   }
 }
@@ -33,9 +34,9 @@
   h1 {
     margin-top: 0;
     font-weight: 700;
-    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: 'Playfair Display', serif;
   }
 
   .intro {
@@ -63,6 +64,7 @@
     font-size: 1.2rem;
 
     h1 {
+      font-size: 3.3rem;
       text-align: left;
     }
 
@@ -82,12 +84,8 @@
       margin-right: 2.5rem;
     }
 
-    h1 {
-      font-size: 4rem;
-    }
-
     p {
-      font-size: 1.35rem;
+      font-size: 1.28rem;
       max-width: inherit;
     }
 
@@ -122,7 +120,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: #111;
+      color: #ffffff !important;
       background: white;
       box-shadow: $box-shadow;
     }
@@ -155,6 +153,7 @@
     align-items: center;
     border-bottom: 0;
     padding-bottom: 0;
+    font-family: 'Playfair Display', serif;
 
     a.view-all {
       display: inline-block;
@@ -168,6 +167,7 @@
 
       &:hover,
       &:focus {
+        color: #fff;
         background: darken($light, 5%);
       }
     }
@@ -344,7 +344,7 @@
 
           &last-of-type {
             &:hover {
-              border-bottom-color: $primary-color;
+              border-bottom-color: $primary-color !important;
             }
           }
 
@@ -593,15 +593,18 @@ h2.publication-company {
 }
 
 .tag-container {
+  cursor: default;
+
   span {
     display: inline-block;
-    padding: 0.3rem 0.5rem;
-    background: $light;
+    background: #3a3040c2;
     border-radius: $border-radius;
     color: lighten($font-color, 10%);
-    font-size: 0.8rem;
-    font-weight: 400;
     margin: 0 0.5rem 0.5rem 0;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
 
     .count {
       color: $secondary-color;
@@ -612,7 +615,7 @@ h2.publication-company {
     &:hover,
     &:active,
     &:focus {
-      background: darken($light, 5%);
+      // background: darken($light, 5%);
       color: $font-color;
     }
   }
@@ -624,9 +627,10 @@ h2.publication-company {
 
 .semester-container {
   margin-left: 0.5em;
-  color: #777;
+  color: $font-color;
   font-size: 0.5em;
   margin-top: 0.6em;
+  text-transform: uppercase;
 }
 
 @include small-breakpoint {
@@ -635,7 +639,7 @@ h2.publication-company {
     margin-left: 1em;
     font-size: 0.8rem;
     padding-top: 0.5em;
-    color: #777;
+
     span {
       display: inline-block;
       padding: 0.3rem 0.5rem;
@@ -665,9 +669,12 @@ h2.publication-company {
 @include small-breakpoint {
   .tag-container {
     span {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       font-weight: 500;
-      padding: 0.3rem 0.8rem;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      font-family: $heading-font-family;
+
 
       .count {
         margin-left: 0.5rem;
@@ -709,7 +716,7 @@ h2.publication-company {
     }
 
     &:hover {
-      color: $primary-color;
+      color: $primary-color !important;
     }
   }
 }
@@ -1035,6 +1042,7 @@ blockquote {
   align-items: center;
   color: $light-font-color;
   align-items: flex-start;
+  background: #210b31;
 
   div {
     display: flex;
@@ -1056,7 +1064,7 @@ blockquote {
     // margin-right: 0.3rem;
 
     &:hover {
-      color: $primary-color;
+      color: $primary-color !important;
     }
   }
 
@@ -1165,16 +1173,15 @@ button[disabled] {
   // margin-top: 2.5rem;
   border-radius: 8px;
   align-self: center;
-  margin-right: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 @include small-breakpoint {
   .personal-picture {
-    margin-top: 2.5rem;
+    margin: 0px 0px 0px 10px;
     border-radius: 8px;
     align-self: center;
     height: 300px;
-    margin-right: 1.5rem;
   }
 }
 

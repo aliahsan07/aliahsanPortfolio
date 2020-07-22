@@ -3,6 +3,7 @@ import React, { Component } from "react";
 export default class Footer extends Component {
   render() {
     return (
+      <div style={{background: '#210b31'}}>
       <footer className="footer container">
         <div>
           <a
@@ -51,6 +52,7 @@ export default class Footer extends Component {
           </span>
         </div>
       </footer>
+      </div>
     );
   }
 }
