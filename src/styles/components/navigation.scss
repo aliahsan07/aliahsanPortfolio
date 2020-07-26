@@ -6,7 +6,9 @@
   z-index: 3;
   width: 100%;
   background: #210b31;
-  
+  background-image: radial-gradient(#b37cef0f 4px, transparent 0);
+  background-size: 27px 27px;
+  border-bottom: 2px #d05f5f8c solid;
 
   &.scroll {
     box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
@@ -130,9 +132,10 @@ button.dark-switcher {
 
 @include small-breakpoint {
   .nav {
+
     &.scroll {
       .nav-container {
-        height: 60px;
+        height: 55px;
       }
 
       .links a {
@@ -170,6 +173,7 @@ button.dark-switcher {
       height: 100%;
 
       a {
+        font-weight: 700;
         font-size: 1.2rem;
         margin: 0 1rem;
         padding: 1rem 0.5rem;

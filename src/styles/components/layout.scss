@@ -21,7 +21,7 @@
 
 @include small-breakpoint {
   .container {
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 0 2rem;
   }
 }
@@ -594,6 +594,7 @@ h2.publication-company {
 
 .tag-container {
   cursor: default;
+  text-align: center;
 
   span {
     display: inline-block;
@@ -615,7 +616,7 @@ h2.publication-company {
     &:hover,
     &:active,
     &:focus {
-      // background: darken($light, 5%);
+      background: #31223ad4;
       color: $font-color;
     }
   }
@@ -625,20 +626,58 @@ h2.publication-company {
   }
 }
 
+.project-title {
+  display: flex;
+  line-height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+@include small-breakpoint {
+  .project-title {
+    line-height: inherit;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    & > h3::after {
+      content: "•";
+      padding: 0 10px;
+      font-size: 14px;
+      color: #d05f5f8c;
+    }
+  }
+}
+
+.project-description {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+@include small-breakpoint {
+  .project-description {
+    text-align: inherit;
+  }
+}
+
 .semester-container {
-  margin-left: 0.5em;
   color: $font-color;
   font-size: 0.5em;
   margin-top: 0.6em;
   text-transform: uppercase;
+  line-height: inherit;
 }
 
 @include small-breakpoint {
   .semester-container {
     // margin-top: 0.9rem;
-    margin-left: 1em;
     font-size: 0.8rem;
     padding-top: 0.5em;
+    line-height: inherit;
 
     span {
       display: inline-block;
@@ -668,6 +707,7 @@ h2.publication-company {
 
 @include small-breakpoint {
   .tag-container {
+    text-align: inherit;
     span {
       font-size: 0.75rem;
       font-weight: 500;
@@ -1034,22 +1074,18 @@ blockquote {
   }
 }
 
+.footer-container {
+  background: #10032fc4;
+}
+
 .footer {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
-  align-items: center;
-  color: $light-font-color;
-  align-items: flex-start;
-  background: #210b31;
-
-  div {
-    display: flex;
-    align-items: center;
-    // padding-bottom: 1.5rem;
-    // align-items: flex-start;
-  }
+  color: #dcdcdce0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 2rem 0rem 2rem;
 
   strong {
     margin-right: 1rem;
@@ -1057,14 +1093,13 @@ blockquote {
 
   a {
     font-weight: 400;
-    color: rgba(0, 0, 0, 0.45);
-    // display: block;
-    text-decoration: underline;
-    font-size: 1.5rem;
-    // margin-right: 0.3rem;
+    font-size: 18px;
+    font-family: "Mulish", serif;
+    color: #dcdcdced !important;
 
     &:hover {
       color: $primary-color !important;
+      text-decoration: underline;
     }
   }
 
@@ -1078,7 +1113,8 @@ blockquote {
 @include small-breakpoint {
   .footer {
     flex-direction: column;
-    height: 100px;
+    height: 95px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1275,8 +1311,9 @@ button[disabled] {
 }
 
 .separator {
-  margin-left: 7px;
-  margin-right: 7px;
+  // margin-left: 7px;
+  // margin-right: 7px;
+  color: #dcdcdc !important;
 }
 
 .project-hrs {

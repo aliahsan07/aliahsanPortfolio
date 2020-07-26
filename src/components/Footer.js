@@ -3,8 +3,8 @@ import React, { Component } from "react";
 export default class Footer extends Component {
   render() {
     return (
-      <div style={{background: '#210b31'}}>
-      <footer className="footer container">
+      <div className="footer-container">
+      <footer className="footer">
         <div>
           <a
             href="https://twitter.com/aliahsan07"
@@ -38,7 +38,7 @@ export default class Footer extends Component {
             email
           </a>
         </div>
-        <div style={{ flexBasis: "100%" }}>
+        {/* <div style={{ flexBasis: "100%" }}>
           <span>
             Portfolio theme credits:
             <a
@@ -50,7 +50,7 @@ export default class Footer extends Component {
               Tania Rascia
             </a>
           </span>
-        </div>
+        </div> */}
       </footer>
       </div>
     );
