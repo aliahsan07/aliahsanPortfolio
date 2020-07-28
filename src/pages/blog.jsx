@@ -13,7 +13,7 @@ export default class BlogSite extends Component {
     const posts = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <div className="container" style={{ marginTop: "-60px" }}>
+        <div className="container">
           <h1>Blog</h1>
           <hr style={{ marginBottom: "2em" }} />
           <PostListing postEdges={posts} />

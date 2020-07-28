@@ -12,24 +12,29 @@ class Portfolio extends React.Component {
           const { title, tags, repo, timestamp } = project.node.frontmatter;
           let featuredImgFluid = project.node.frontmatter.cover;
           return (
-            <div key={index} style={{ display: "flex", flexDirection: "column" }}>
+            <div key={index} style={{ marginTop: 30, display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", flexDirection: "row" }}>
                 {!!repo ? (
                   <a
                     key={title}
                     target="_blank"
-                    style={{ textDecoration: "none" }}
+                    style={{ textDecoration: "none", width: "100%" }}
                     href={repo}
                   >
-                    <h3 style={{ marginBottom: "0.2em" }}>{title}</h3>
+                    <span className="project-title">
+                      <h3 style={{ marginBottom: "0.2em", display: "inline" }}>{title}</h3>
+                      <div className="semester-container">{timestamp}</div>
+                    </span>
                   </a>
                 ) : (
-                  <h3 style={{ marginBottom: "0.2em" }}>{title}</h3>
+                    <span className="project-title">
+                      <h3 style={{ marginBottom: "0.2em", display: "inline" }}>{title}</h3>
+                      <div className="semester-container">{timestamp}</div>
+                    </span>
                 )}
-                <div className="semester-container">{timestamp}</div>
               </div>
               <Img fluid={featuredImgFluid} />
-              <p>{project.node.internal.content}</p>
+              <p className="project-description">{project.node.internal.content}</p>
               <div className="tag-container">
                 {tags &&
                   tags.map((tag, index) => (
