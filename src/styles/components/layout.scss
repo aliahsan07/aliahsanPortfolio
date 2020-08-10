@@ -2,13 +2,11 @@
   margin-top: 55px;
   padding: 40px 0 0;
   min-height: calc(100vh - 162px);
-  background: #10032fc4;
 }
 
 @include small-breakpoint {
   #main-content {
     padding: 60px 0 0;
-    min-height: calc(100vh - 219px);
   }
 }
 
@@ -1074,10 +1072,6 @@ blockquote {
   }
 }
 
-.footer-container {
-  background: #10032fc4;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -1277,9 +1271,6 @@ button[disabled] {
   flex-direction: column;
 }
 
-.caption {
-  color: rgba(0, 0, 0, 0.45);
-}
 
 @include small-breakpoint {
   .contact {
