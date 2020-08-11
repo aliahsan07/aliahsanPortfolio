@@ -40,7 +40,7 @@
 // Apply styles to .button class, button element, and button-based inputs
 #{$buttons} {
   @extend %buttons;
-
+  color: rgb(77, 66, 66);
   &::-moz-focus-inner {
     border: 0;
     padding: 0;

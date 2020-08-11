@@ -2,11 +2,11 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Formik, Field, Form } from "formik";
 import Layout from "../layout";
-import ali from "../images/texas.jpeg";
+import ali from "../images/blue.jpg";
 
-const encode = data => {
+const encode = (data) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 };
 
@@ -22,7 +22,7 @@ class ContactPage extends React.Component {
           <div style={{ width: "33%" }}>
             <Formik
               initialValues={{ email: "", name: "", message: "" }}
-              validate={values => {
+              validate={(values) => {
                 const errors = {};
                 // if (
                 //   !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
@@ -35,18 +35,18 @@ class ContactPage extends React.Component {
                 fetch("/?no-cache=1", {
                   method: "POST",
                   headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
+                    "Content-Type": "application/x-www-form-urlencoded",
                   },
                   body: encode({
                     "form-name": "contact",
-                    ...values
-                  })
+                    ...values,
+                  }),
                 })
                   .then(() => {
                     setSubmitting(false);
                     resetForm();
                   })
-                  .catch(error => {
+                  .catch((error) => {
                     setSubmitting(false);
                   });
               }}
@@ -58,7 +58,7 @@ class ContactPage extends React.Component {
                 handleChange,
                 handleBlur,
                 handleSubmit,
-                isSubmitting
+                isSubmitting,
                 /* and other goodies */
               }) => (
                 <form
