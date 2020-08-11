@@ -7,7 +7,6 @@ import PostListing from "../components/PostListing/PostListing";
 import Portfolio from "../components/Portfolio/Portfolio";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import ali from "../images/ali.jpg";
 import AliAhsan from "../images/AliAhsan.jpg";
 
 class Index extends React.Component {
@@ -47,7 +46,11 @@ class Index extends React.Component {
                     `}
                   </p>
                 </div>
-                <img src={AliAhsan} className="personal-picture" alt="Ali Ahsan" />
+                <img
+                  src={AliAhsan}
+                  className="personal-picture"
+                  alt="Ali Ahsan"
+                />
               </div>
 
               <div className="social-buttons">
