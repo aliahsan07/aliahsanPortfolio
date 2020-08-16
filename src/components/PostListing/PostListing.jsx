@@ -6,7 +6,7 @@ import moment from "moment";
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
-    this.props.postEdges.forEach(postEdge => {
+    this.props.postEdges.forEach((postEdge) => {
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -14,11 +14,10 @@ class PostListing extends React.Component {
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead
+        timeToRead: postEdge.node.timeToRead,
       });
     });
     // i wanna see my printy boy
-    console.log("uaaaaa", postList);
     return postList;
   }
 
@@ -35,7 +34,7 @@ class PostListing extends React.Component {
     const length = postList.length;
     return (
       <>
-        {postList.map(post => (
+        {postList.map((post) => (
           // problem is here? post.path there is no route
           <Link to={post.path} key={post.title}>
             <h3>{post.title}</h3>

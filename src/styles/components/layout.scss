@@ -34,7 +34,7 @@
     font-weight: 700;
     margin-bottom: 1.5rem;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
   }
 
   .intro {
@@ -151,7 +151,7 @@
     align-items: center;
     border-bottom: 0;
     padding-bottom: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 
     a.view-all {
       display: inline-block;
@@ -631,7 +631,6 @@ h2.publication-company {
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
 
 @include small-breakpoint {
@@ -712,7 +711,6 @@ h2.publication-company {
       padding: 0.5rem 1rem;
       text-transform: uppercase;
       font-family: $heading-font-family;
-
 
       .count {
         margin-left: 0.5rem;
@@ -967,18 +965,31 @@ blockquote {
   margin-bottom: 2rem;
 }
 
-@keyframes coming-soon { 
-  0%, 20%, 50%, 80%, 85%, 90%, 95%, 100% {transform: translateY(0);} 
-  40% {transform: translateY(-70px);} 
-  60% {transform: translateY(-55px);} 
+@keyframes coming-soon {
+  0%,
+  20%,
+  50%,
+  80%,
+  85%,
+  90%,
+  95%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-70px);
+  }
+  60% {
+    transform: translateY(-55px);
+  }
 }
 
-.coming-soon { 
+.coming-soon {
   color: #333;
   text-align: center;
   margin: 80px 0px !important;
-  animation-duration: 2s; 
-  animation-name: coming-soon; 
+  animation-duration: 2s;
+  animation-name: coming-soon;
   animation-timing-function: ease-out;
 }
 
@@ -1075,7 +1086,7 @@ blockquote {
 .footer {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
+  justify-content: space-between;
   color: #dcdcdce0;
   max-width: 900px;
   margin: 0 auto;
@@ -1270,7 +1281,6 @@ button[disabled] {
   align-items: center;
   flex-direction: column;
 }
-
 
 @include small-breakpoint {
   .contact {

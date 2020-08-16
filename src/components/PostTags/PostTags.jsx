@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import _ from "lodash";
-import { Link } from "gatsby";
 
 class PostTags extends Component {
   render() {
     const { tags } = this.props;
     return (
-      <div className="post-tag-container">
+      <div className="tag-container">
         {tags &&
           tags.map((tag, index) => (
-            <button key={index} disabled style={{ textDecoration: "none" }}>
+            <span key={index} style={{ textDecoration: "none" }}>
               {tag}
-            </button>
+            </span>
           ))}
       </div>
     );
