@@ -1269,7 +1269,8 @@ button[disabled] {
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.7);
+  background: cadetblue;
+
   // color: #111;
 }
 
@@ -1319,4 +1320,8 @@ button[disabled] {
 
 .project-hrs {
   width: inherit;
+}
+
+.blogpost-title {
+  margin-bottom: 0.7em;
 }

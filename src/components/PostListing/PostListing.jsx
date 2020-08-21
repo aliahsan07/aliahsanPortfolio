@@ -36,12 +36,15 @@ class PostListing extends React.Component {
       <>
         {postList.map((post) => (
           // problem is here? post.path there is no route
-          <Link to={post.path} key={post.title}>
-            <h3>{post.title}</h3>
-            <div className="excerpt">
-              {moment.utc(post.date).format("MMMM Do, YYYY")}
-            </div>
-          </Link>
+          <>
+            <Link to={post.path} key={post.title}>
+              <h3 className="blogpost-title">{post.title}</h3>
+              <div className="excerpt">
+                {moment.utc(post.date).format("MMMM Do, YYYY")}
+              </div>
+            </Link>
+            <hr style={{ borderTop: "1px dotted rgb(220, 220, 220)" }} />
+          </>
         ))}
       </>
     );

@@ -15,7 +15,7 @@ export default class BlogSite extends Component {
       <Layout>
         <div className="container">
           <h1>Blog</h1>
-          <hr style={{ marginBottom: "2em" }} />
+          <hr />
           <PostListing postEdges={posts} />
         </div>
       </Layout>
