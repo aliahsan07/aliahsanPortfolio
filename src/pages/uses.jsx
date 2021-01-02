@@ -4,7 +4,7 @@ import Layout from "../layout";
 const Uses = () => {
   return (
     <Layout>
-      <div className="container" style={{ marginTop: "-60px" }}>
+      <div className="container">
         <h2>Uses</h2>
         <h5>
           Motivated by{" "}
