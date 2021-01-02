@@ -24,6 +24,10 @@ const config = {
       link: "/blog/"
     },
     {
+      name: "Ramble",
+      link: "/rambling/"
+    },
+    {
       name: "Contact",
       link: "/contact/"
     }
