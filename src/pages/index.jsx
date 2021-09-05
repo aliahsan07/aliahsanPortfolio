@@ -24,25 +24,15 @@ class Index extends React.Component {
                 <div className="intro-text">
                   <h1>{`Hi, I'm Ali`}</h1>
                   <p>
-                    {`I'm a Computer Science Masters Student at University of
-                    Texas at Dallas. I'm interning at Walmart for Summer 2020 as a full-stack developer. 
+                    {`I am a Software Development Engineer at Amazon Web Services in Boston, MA.
+                    I completed my Master's in Computer Science in May, 2021 from The University of Texas at Dallas.
                     `}
                   </p>
                   <p>
-                    {`My research interest lies in the static analysis of dynamic languages, primarily JavaScript. I work with Professor `}
-                    <a
-                      target="_blank"
-                      href="https://personal.utdallas.edu/~swei/"
-                    >
-                      Shiyi Wei{" "}
-                    </a>
-                    on evaluating the current state of JavaScript static
-                    analysis tooling and automatic localization of sources of
-                    inaccuracy.
+                    My interest lies in building distributed and scalable applications, UI development, static analysis of dynamic languages and (lately) blockchain development.
                   </p>
                   <p>
-                    {`I originate from Pakistan, where I did my undergrad in CS from Lahore University of Management Sciences.
-                    I worked at VentureDive, Lahore for 13 months before coming to the United States to pursue Masters.
+                    {`I originate from Pakistan, where I did my undergrad in Computer Science from Lahore University of Management Sciences in 2018.
                     `}
                   </p>
                 </div>
